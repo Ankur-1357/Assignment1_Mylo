@@ -1,21 +1,21 @@
 import Image from "next/image";
-
-export default function ProductCard({slides}){
+export default function ProductCard({product}){
     return (
     <div className="flex flex-col h-115 w-60 bg-amber-100 shadow-2xl rounded-2xl">
         <div className="flex items-center justify-center w-full ">
-             <Image src="/CardImage2.png" alt="Product Here" height={125} width={300} className=" rounded-t-2xl" />
+             <Image src={product.image} alt="Product Here" height={125} width={300} className=" rounded-t-2xl" />
         </div>
         <div className="flex flex-col justify-start ml-2">
-            <div className="text-[#00000099]"><p>SKIN BRIGHTENING</p></div>
-            <div className="text-[#000000DE] text-[16px]"><p><b>Vitamin C facewash -<br></br> 100ML</b></p></div>
+            <div className="text-[#00000099]"><p>{product.tag}</p></div>
+            <div className="text-[#000000DE] text-[16px]"><p><b>{product.title.split(" - ")[0]} -<br />
+              {product.title.split(" - ")[1]}</b></p></div>
             <div className="flex flex-row mt-2 gap-x-2">
                 <Image src="/RatingIcon.png" alt="rating" height={20} width={20}/>
-                <div className="text-[#000000] text-[16px]"><p>4.2</p></div><div className="text-[#898989BD] text-[14px]"><p>(3413)</p></div>
+                <div className="text-[#000000] text-[16px]"><p>{product.rating}</p></div><div className="text-[#898989BD] text-[14px]"><p>{product.reviews}</p></div>
                 
             </div>
             <div className="flex flex-row mt-2 gap-x-2">
-                <div className="text-[#000000DE] text-[18px]"><p><b>₹99</b></p></div><div className="text-[#898989BD] text-[16px]"><p><s>₹249</s></p></div><div className="text-[#20B2AACC] text-[14px]"><p>61%</p></div>
+                <div className="text-[#000000DE] text-[18px]"><p><b>₹{product.price}</b></p></div><div className="text-[#898989BD] text-[16px]"><p><s>₹{product.mrp}</s></p></div><div className="text-[#20B2AACC] text-[14px]"><p>{product.discount}</p></div>
 
             </div>
         </div>

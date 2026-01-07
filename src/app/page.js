@@ -102,8 +102,8 @@ export default function Home() {
       </div>
       <div className="flex flex-row items-center justify-center pb-4 gap-x-3">
         <div className="flex justify-center h-25 w-25"><button onClick={()=>{setVisibleCount(1)}} className=" bg-red-600 font-[13px] justify-center items-center text-center rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black ">button 1</button></div>
-        <div className="flex justify-center h-25 w-25"><button onClick={()=>{setVisibleCount(2)}} className=" bg-red-600 font-[13px] justify-center items-center text-center rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black">button 1</button></div>
-        <div className="flex justify-center h-25 w-25"><button onClick={()=>{setVisibleCount(3)}} className=" bg-red-600 font-[13px] justify-center items-center text-center rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black">button 1</button></div>
+        <div className="flex justify-center h-25 w-25"><button onClick={()=>{setVisibleCount(2)}} className=" bg-red-600 font-[13px] justify-center items-center text-center rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black">button 2</button></div>
+        <div className="flex justify-center h-25 w-25"><button onClick={()=>{setVisibleCount(3)}} className=" bg-red-600 font-[13px] justify-center items-center text-center rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black">button 3</button></div>
       </div>
       <div className="flex flex-row gap-x-3 items-center justify-center">
         {products.slice(0,visibleCount).map((p,idx)=>(

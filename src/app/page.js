@@ -48,11 +48,11 @@ export default function Home() {
 
   return (
     <div className="flex  min-h-screen flex-col bg-white font-sans">
-      <div className=" flex items-center w-full h-12  justify-center text-amber-50 bg-black"><p className="text-center animate-marquee">This changing weather, protect your family with big discounts! Use code:<b>FIRST10</b> </p></div>
+      <div className=" flex items-center w-full h-12  justify-center text-amber-50 bg-black"><p className="text-center animate-marquee overflow-hidden">This changing weather, protect your family with big discounts! Use code:<b>FIRST10</b> </p></div>
       <div className="flex flex-row items-center w-full h-25 px-10   bg-amber-50">
         <div><Image src="/108334.png" alt="Photo" height={100} width={100} /></div>
         <div className="flex px-5"></div>
-        <div className="flex flex-row text-black m-5 bg-[#eeeeee] rounded-full text-center items-center pl-5"><input className=" w-150 h-12" placeholder="Search"></input>
+        <div className="flex flex-row text-black m-5 bg-[#eeeeee] rounded-full text-center items-center pl-5"><input className="w-150 max-w-full h-12 bg-transparent outline-none" placeholder="Search"></input>
           <div className="flex items-center justify-center p-5"><Image src="/search_Icon.png" alt="Icon here" height={25} width={25} /></div>
         </div>
         <div className="flex px-10"></div>
@@ -110,6 +110,19 @@ export default function Home() {
           <ProductCard key={idx} product={p}/>
         ))}
       </div>
+      <div className="w-full flex justify-center mt-2">
+        <div className="w-full ">
+          <Image
+            src="/trialicon.png"
+            alt="Trial Packs"
+            width={2027}
+            height={687}
+            className="w-full  rounded-2xl"
+            priority
+          />
+        </div>
+      </div>
+
     </div>
   );
 }

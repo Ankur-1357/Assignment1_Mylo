@@ -19,7 +19,7 @@ export default function ProductCard({product}){
 
             </div>
         </div>
-        <div className="flex justify-center pt-3"><div className=" flex h-10.5 w-[90%] justify-center" ><button className=" bg-red-600 font-[13px] justify-center items-center text-center rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black">Add to Cart</button></div></div>
+        <div className="flex justify-center pt-3"><div className=" flex h-10.5 w-[90%] justify-center" ><button className=" bg-red-600 font-[13px] justify-center items-center text-center rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black font-bold ">Add to Cart</button></div></div>
 
      
     </div>

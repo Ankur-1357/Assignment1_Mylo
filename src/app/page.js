@@ -4,6 +4,7 @@ import HomeSlider from "../../components/HomeSlider";
 import ProductCard from "../../components/ProductCard";
 import { useState } from "react";
 import ProductSlider from "../../components/ProductSlider";
+import VideoProductSlider from "../../components/VideoProductSlider";
 const slides=[
     {src: "/Image1.png",alt: "Image 1"},
     {src: "/Image2.png",alt: "Image 2"},
@@ -92,6 +93,64 @@ const products=[
     discount:61,
   }
 ];
+const VideoProducts=[
+  {
+    video:"/Video.mp4",
+    image:"/CardImage2.png",
+    price:499,
+    mrp:699,
+    discount:29,
+  },
+  {
+    video:"/Video.mp4",
+    image:"/CardImage2.png",
+    price:499,
+    mrp:699,
+    discount:29,
+  },
+   {
+    video:"/Video.mp4",
+    image:"/CardImage2.png",
+    price:499,
+    mrp:699,
+    discount:29,
+  },
+   {
+    video:"/Video.mp4",
+    image:"/CardImage2.png",
+    price:499,
+    mrp:699,
+    discount:29,
+  },
+   {
+    video:"/Video.mp4",
+    image:"/CardImage2.png",
+    price:499,
+    mrp:699,
+    discount:29,
+  },
+   {
+    video:"/Video.mp4",
+    image:"/CardImage2.png",
+    price:499,
+    mrp:699,
+    discount:29,
+  },
+   {
+    video:"/Video.mp4",
+    image:"/CardImage2.png",
+    price:499,
+    mrp:699,
+    discount:29,
+  },
+   {
+    video:"/Video.mp4",
+    image:"/CardImage2.png",
+    price:499,
+    mrp:699,
+    discount:29,
+  }
+];
 
 export default function Home() {
   const [visibleCount,setVisibleCount]=useState(1);
@@ -173,7 +232,7 @@ export default function Home() {
         
       </div>
         <ProductSlider products={products}/>
-        <div className="w-full h-400 py-6 bg-[#FFFCF5] ">
+        <div className="w-full h-340 py-6 bg-[#FFFCF5] ">
           <div className="w-full mt-5 px-6">
             <div className="max-w-[1400px] mx-auto flex gap-2 ">
               <div className="flex-1">
@@ -217,7 +276,64 @@ export default function Home() {
             <div className="flex justify-center pt-5"><div className=" flex w-[523.6px] h-[59.2px] justify-center " ><button className=" bg-red-600 text-[22px] text-[#fff] justify-center items-center text-center   font-bold rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black">Explore Baby Products </button></div></div>
           </div>
         </div>
+        <div className="flex items-center justify-center mt-10 mb-[30px]"> 
+            <p className="text-[#675B5A] text-[30px] "><b>Effective, Backed by Real Reviews</b></p>
+        </div>
+       <div>
+         <VideoProductSlider products={VideoProducts}/>
+       </div>
+       <div className="flex items-center justify-center mt-5 mb-[30px]"> 
+            <p className="text-[#675B5A] text-[30px] "><b>Real people, Real results</b></p>
+        </div>
+        <div className="flex flex-row w-full ml-4 mr-4 pb-5 justify-center gap-x-1.5">
+          <img src="rating_1.png" alt="rating1" className="w-70 shadow-2xl rounded-2xl"/>
+          <img src="rating_2.png" alt="rating1" className="w-70 shadow-2xl rounded-2xl"/>
+          <img src="rating_3.png" alt="rating1" className="w-70 shadow-2xl rounded-2xl"/>
+          <img src="rating_4.png" alt="rating1" className="w-70  shadow-2xl rounded-2xl"/>
+        </div>
 
+        <div className="flex items-center justify-center mt-5 mb-[30px]"> 
+            <p className="text-[#675B5A] text-[30px] "><b>Stay Informed and Inspired</b></p>
+        </div>
+        <div className="flex flex-row w-full   justify-center items-center w-full gap-x-2 h-[450px]"> 
+            <div className="flex flex-col w-90 h-95 rounded-2xl shadow-2xl">
+              <img src="mother_baby.png" alt="mother" className="rounded-2xl"/>
+              <div className="flex pl-3 pt-2">
+              <p className="font-bold text-[#5F6C37] text-[18px]"><b>Top 6 Reasons Why Babies Wake Up at Night</b></p>
+              </div>
+              <hr />
+              <div className="flex pl-6 pt-2 pr-6">
+              <p className=" text-[#242914] text-[16px]">Is your newborn waking up frequently at night? Are  you aware of the reasons why your baby is not...</p>
+              </div>
+            </div>
+              <div className="flex flex-col w-90 h-95 rounded-2xl shadow-2xl">
+              <img src="mother_baby.png" alt="mother" className="rounded-2xl"/>
+              <div className="flex pl-3 pt-2">
+              <p className="font-bold text-[#5F6C37] text-[18px]"><b>Top 6 Reasons Why Babies Wake Up at Night</b></p>
+              </div>
+              <hr />
+              <div className="flex pl-6 pt-2 pr-6">
+              <p className=" text-[#242914] text-[16px]">Is your newborn waking up frequently at night? Are  you aware of the reasons why your baby is not...</p>
+              </div>
+            </div>
+             <div className="flex flex-col w-90 h-95 rounded-2xl shadow-2xl">
+              <img src="mother_baby.png" alt="mother" className="rounded-2xl"/>
+              <div className="flex pl-3 pt-2">
+              <p className="font-bold text-[#5F6C37] text-[18px]"><b>Top 6 Reasons Why Babies Wake Up at Night</b></p>
+              </div>
+              <hr />
+              <div className="flex pl-6 pt-2 pr-6">
+              <p className=" text-[#242914] text-[16px]">Is your newborn waking up frequently at night? Are  you aware of the reasons why your baby is not...</p>
+              </div>
+            </div>
+            
+        </div>
+            <div>
+              <div className="flex justify-center pt-2"><div className=" flex w-[550px] h-[48px] justify-center " ><button className=" bg-red-600 text-[22px] text-[#fff] justify-center items-center text-center   font-bold rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black">View All</button></div></div>
+            </div>
+            <div className=" flex justify-center items-center w-full  h-[500px]">
+              <img src="Big_image.png" alt="big" className="rounded-2xl w-[1000px] "/>
+            </div>
     </div>
   );
 }

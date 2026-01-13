@@ -5,6 +5,9 @@ import ProductCard from "../../components/ProductCard";
 import { useState } from "react";
 import ProductSlider from "../../components/ProductSlider";
 import VideoProductSlider from "../../components/VideoProductSlider";
+import BottomBar from "../../components/BottomBar";
+import ArticlesDiv from "../../components/ArticlesDiv";
+import AwardsSection from "../../components/AwardsSection";
 const slides=[
     {src: "/Image1.png",alt: "Image 1"},
     {src: "/Image2.png",alt: "Image 2"},
@@ -295,45 +298,17 @@ export default function Home() {
         <div className="flex items-center justify-center mt-5 mb-[30px]"> 
             <p className="text-[#675B5A] text-[30px] "><b>Stay Informed and Inspired</b></p>
         </div>
-        <div className="flex flex-row w-full   justify-center items-center w-full gap-x-2 h-[450px]"> 
-            <div className="flex flex-col w-90 h-95 rounded-2xl shadow-2xl">
-              <img src="mother_baby.png" alt="mother" className="rounded-2xl"/>
-              <div className="flex pl-3 pt-2">
-              <p className="font-bold text-[#5F6C37] text-[18px]"><b>Top 6 Reasons Why Babies Wake Up at Night</b></p>
-              </div>
-              <hr />
-              <div className="flex pl-6 pt-2 pr-6">
-              <p className=" text-[#242914] text-[16px]">Is your newborn waking up frequently at night? Are  you aware of the reasons why your baby is not...</p>
-              </div>
-            </div>
-              <div className="flex flex-col w-90 h-95 rounded-2xl shadow-2xl">
-              <img src="mother_baby.png" alt="mother" className="rounded-2xl"/>
-              <div className="flex pl-3 pt-2">
-              <p className="font-bold text-[#5F6C37] text-[18px]"><b>Top 6 Reasons Why Babies Wake Up at Night</b></p>
-              </div>
-              <hr />
-              <div className="flex pl-6 pt-2 pr-6">
-              <p className=" text-[#242914] text-[16px]">Is your newborn waking up frequently at night? Are  you aware of the reasons why your baby is not...</p>
-              </div>
-            </div>
-             <div className="flex flex-col w-90 h-95 rounded-2xl shadow-2xl">
-              <img src="mother_baby.png" alt="mother" className="rounded-2xl"/>
-              <div className="flex pl-3 pt-2">
-              <p className="font-bold text-[#5F6C37] text-[18px]"><b>Top 6 Reasons Why Babies Wake Up at Night</b></p>
-              </div>
-              <hr />
-              <div className="flex pl-6 pt-2 pr-6">
-              <p className=" text-[#242914] text-[16px]">Is your newborn waking up frequently at night? Are  you aware of the reasons why your baby is not...</p>
-              </div>
-            </div>
-            
-        </div>
-            <div>
-              <div className="flex justify-center pt-2"><div className=" flex w-[550px] h-[48px] justify-center " ><button className=" bg-red-600 text-[22px] text-[#fff] justify-center items-center text-center   font-bold rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black">View All</button></div></div>
-            </div>
-            <div className=" flex justify-center items-center w-full  h-[500px]">
-              <img src="Big_image.png" alt="big" className="rounded-2xl w-[1000px] "/>
-            </div>
+            <ArticlesDiv/>
+          <div>
+            <div className="flex justify-center pt-2"><div className=" flex w-[550px] h-[48px] justify-center " ><button className=" bg-red-600 text-[22px] text-[#fff] justify-center items-center text-center   font-bold rounded-2xl w-full hover:cursor-pointer hover:bg-amber-300 hover:text-black">View All</button></div></div>
+          </div>
+          <div className=" flex justify-center items-center w-full  h-[500px]">
+            <img src="Big_image.png" alt="big" className="rounded-2xl w-[1000px] "/>
+          </div>
+          <AwardsSection/>
+          <img src="MyloDesign.png" alt="footer" className="w-full h-100"/>
+          <BottomBar/>
+          
     </div>
   );
 }
